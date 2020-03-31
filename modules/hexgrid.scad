@@ -1,3 +1,13 @@
+//
+// Source: https://www.thingiverse.com/thing:1296149
+//
+
+// first arg is vector that defines the bounding box, length, width, height
+// second arg in the 'diameter' of the holes. In OpenScad, this refers to the corner-to-corner diameter, not flat-to-flat
+// this diameter is 2/sqrt(3) times larger than flat to flat
+// third arg is wall thickness.  This also is measured that the corners, not the flats. 
+
+//hexgrid([25, 25, 1.5], 1, 0.5);
 
 module hex(hole, wall, thick){
     hole = hole;
@@ -21,10 +31,3 @@ module hexgrid(box, holediameter, wallthickness) {
     }
         
 }
-
-// first arg is vector that defines the bounding box, length, width, height
-// second arg in the 'diameter' of the holes. In OpenScad, this refers to the corner-to-corner diameter, not flat-to-flat
-// this diameter is 2/sqrt(3) times larger than flat to flat
-// third arg is wall thickness.  This also is measured that the corners, not the flats. 
-
-//hexgrid([25, 25, 1.5], 1, 0.5);
